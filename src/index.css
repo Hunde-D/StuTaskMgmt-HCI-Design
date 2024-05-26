@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .max-container {
+    max-width: 1440px;
+  }
+  .active {
+    @apply border-sky-600 text-cyan-600;
+  }
+}
+@layer base {
+  :root {
+    --light-bg-primary: 255, 255, 255;
+    --light-bg-secondary: 243, 244, 248;
+    --light-bg-light-white: 251, 250, 255;
+    --dark-bg-primary: 30, 31, 37;
+    --dark-bg-secondary: 19, 21, 23;
+
+    --btn-Primary: 81, 80, 249;
+  }
+}
