@@ -1,4 +1,5 @@
 import TaskDone from "./TaskDone";
+import Task from "./Task";
 import TaskSummary from "./TaskSummary";
 
 const DashBoard = () => {
@@ -15,7 +16,7 @@ const DashBoard = () => {
         <TaskSummary key={index} dt={index} />
       ))}
       <TaskDone />
-      {/* <TaskSummary dt={3} /> */}
+      <Task />
     </div>
   );
 };
