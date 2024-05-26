@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 @layer components {
   .max-container {
     max-width: 1440px;
@@ -10,7 +12,14 @@
     @apply border-sky-600 text-cyan-600;
   }
 }
+@font-face {
+  font-family: "DMSans";
+  src: url("../public/fonts/DM_Sans/static/DMSans_18pt-Regular.ttf");
+}
 @layer base {
+  * {
+    @apply font-DMSans;
+  }
   :root {
     --light-bg-primary: 255, 255, 255;
     --light-bg-secondary: 243, 244, 248;

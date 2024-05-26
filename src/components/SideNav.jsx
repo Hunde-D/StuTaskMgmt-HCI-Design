@@ -1,29 +1,45 @@
-import { NavLink } from "react-router-dom";
-import { GrAppsRounded } from "react-icons/gr";
+import { Link } from "react-router-dom";
 import icon0 from "../assets/icons/icon0.svg";
 import icon1 from "../assets/icons/icon1.svg";
 import icon2 from "../assets/icons/icon2.svg";
 import icon3 from "../assets/icons/icon3.svg";
 import icon4 from "../assets/icons/icon4.svg";
+import { GrAppsRounded } from "react-icons/gr";
+import { IoIosSettings } from "react-icons/io";
+import { GoBook } from "react-icons/go";
+import { VscSend } from "react-icons/vsc";
+import { HiOutlineFolderPlus } from "react-icons/hi2";
 
 const SideNav = () => {
   return (
-    <div className="bg- flex h-full w-16 grow-0 flex-col items-center justify-center gap-3 bg-light-white dark:bg-dark-Primary ">
-      <NavLink to="/">
-        <img src={icon0} />
-      </NavLink>
-      <NavLink to="/timeline">
+    <div className="bg- flex h-full w-16 grow-0 flex-col items-center justify-center gap-10 bg-light-white dark:bg-dark-Primary ">
+      <Link to="/" className={"active p-2 hover:text-[#5051F9]"}>
+        <GrAppsRounded
+          size={24}
+          className=" text-purple-950 hover:text-[#5051F9]"
+        />
+      </Link>
+      <Link to="/timeline">
         <img src={icon1} />
-      </NavLink>
-      <NavLink to="/tasks">
-        <img src={icon2} />
-      </NavLink>
-      <NavLink to="/chat">
-        <img src={icon3} />
-      </NavLink>
-      <NavLink to="/page">
-        <img src={icon4} />
-      </NavLink>
+      </Link>
+      <Link to="/tasks">
+        <GoBook size={24} className=" text-purple-950 hover:text-[#5051F9]" />
+      </Link>
+      <Link to="/setting">
+        <IoIosSettings
+          size={24}
+          className=" text-purple-950 hover:text-[#5051F9]"
+        />
+      </Link>
+      <Link to="/chat">
+        <VscSend size={24} className=" text-purple-950 hover:text-[#5051F9]" />
+      </Link>
+      <Link to="/page">
+        <HiOutlineFolderPlus
+          size={24}
+          className=" text-purple-950 hover:text-[#5051F9]"
+        />
+      </Link>
     </div>
   );
 };

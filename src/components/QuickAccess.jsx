@@ -1,5 +1,7 @@
 const QuickAccess = () => {
-  return <div className=" bg-light-Primary flex-auto">QuickAccess</div>;
+  return (
+    <div className=" font-DMSans flex-auto bg-light-Primary">QuickAccess</div>
+  );
 };
 
 export default QuickAccess;
