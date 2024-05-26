@@ -1,40 +1,51 @@
-import { useState } from "react";
-import Tabs from "./Tabs";
+import { useEffect, useState } from "react";
+import daily from "../assets/imges/tab0.png";
+import weekly from "../assets/imges/tab1.png";
+import monthly from "../assets/imges/tab2.png";
+
+const img = [daily, weekly, monthly];
 
 const TaskDone = () => {
-  const [currTab, setCurrTab] = useState(0);
+  const [currTab, setCurrTab] = useState(2);
+  const [tabImg, setTabImg] = useState(img[currTab]);
   const tabs = [
     {
-      label: "Tab 1",
-      content: <div>This is content for Tab 1</div>,
+      label: "Daily",
+      content: daily,
     },
     {
-      label: "Tab 2",
-      content: <div>This is content for Tab 2</div>,
+      label: "Weekly",
+      content: weekly,
     },
     {
-      label: "Tab 3",
-      content: <div>This is content for Tab 3</div>,
+      label: "Monthly",
+      content: monthly,
     },
   ];
   const handleTabs = (index) => {
     setCurrTab(index);
   };
+  useEffect(() => {
+    setTabImg(img[currTab]);
+  }, [currTab]);
   return (
-    <div>
-      <div className="flex gap-2">
-        {tabs.map((tab, index) => (
-          <div
-            key={index}
-            className={`${index === currTab ? "active" : "border-gray-200 "} border-b-2 p-4 hover:border-sky-300 hover:text-sky-600`}
-            onClick={() => handleTabs(index)}
-          >
-            {" "}
-            {tab.label}
-          </div>
-        ))}
+    <div className="col-span-2 bg-light-Primary">
+      <div className="flex justify-between">
+        <p>Task Done</p>
+        <div className="flex gap-3 pr-4">
+          {tabs.map((tab, index) => (
+            <div
+              key={index}
+              className={`${index === currTab ? "active" : "border-gray-200 "} border-b-2  p-2 text-center text-sm font-semibold hover:border-sky-300 hover:text-sky-600`}
+              onClick={() => handleTabs(index)}
+            >
+              {tab.label}
+            </div>
+          ))}
+        </div>
       </div>
-      <div>{tabs[currTab].content}</div>
+      <img src={tabImg} className="ml-10 h-48 w-5/6" />
+      <div></div>
     </div>
   );
 };

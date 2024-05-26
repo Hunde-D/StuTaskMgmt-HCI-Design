@@ -1,7 +1,7 @@
 import { Card, CardBody } from "@material-tailwind/react";
 import Chart from "react-apexcharts";
 
-const TaskChart = () => {
+const TaskChart = ({ lineColor }) => {
   const chartConfig = {
     type: "line",
     height: 150,
@@ -22,7 +22,7 @@ const TaskChart = () => {
           top: 5,
           left: 0,
           blur: 3,
-          color: "#000",
+          color: lineColor,
           opacity: 0.3,
         },
       },
@@ -32,7 +32,7 @@ const TaskChart = () => {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#020617"],
+      colors: [lineColor],
       stroke: {
         lineCap: "round",
         curve: "smooth",
