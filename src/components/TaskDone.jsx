@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import daily from "../assets/imges/tab0.png";
-import weekly from "../assets/imges/tab1.png";
-import monthly from "../assets/imges/tab2.png";
+import daily from "../assets/images/tab0.png";
+import weekly from "../assets/images/tab1.png";
+import monthly from "../assets/images/tab2.png";
 
 const img = [daily, weekly, monthly];
 
