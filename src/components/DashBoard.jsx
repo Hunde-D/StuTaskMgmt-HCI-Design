@@ -15,7 +15,7 @@ const DashBoard = () => {
         <TaskSummary key={index} dt={index} />
       ))}
       <TaskDone />
-      <TaskSummary dt={3} />
+      {/* <TaskSummary dt={3} /> */}
     </div>
   );
 };

@@ -29,14 +29,14 @@ const TaskDone = () => {
     setTabImg(img[currTab]);
   }, [currTab]);
   return (
-    <div className="col-span-2 bg-light-Primary">
+    <div className="dark:text-light-text col-span-3 rounded-2xl bg-light-Primary p-2 px-4 dark:bg-dark-Primary">
       <div className="flex justify-between">
         <p>Task Done</p>
         <div className="flex gap-3 pr-4">
           {tabs.map((tab, index) => (
             <div
               key={index}
-              className={`${index === currTab ? "active" : "border-gray-200 "} border-b-2  p-2 text-center text-sm font-semibold hover:border-sky-300 hover:text-sky-600`}
+              className={`${index === currTab ? "active" : " "}  p-2 text-center text-sm font-semibold hover:text-sky-600`}
               onClick={() => handleTabs(index)}
             >
               {tab.label}

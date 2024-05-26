@@ -9,7 +9,7 @@
     max-width: 1440px;
   }
   .active {
-    @apply border-sky-600 text-cyan-600;
+    @apply border-sky-600 text-sky-600;
   }
 }
 @font-face {
@@ -27,5 +27,6 @@
     --dark-bg-primary: 30, 31, 37;
     --dark-bg-secondary: 19, 21, 23;
     --btn-primary: 81, 80, 249;
+    --dark-text: 225, 227, 231;
   }
 }

@@ -16,6 +16,7 @@ export default {
         "dark-Primary": "rgba(var(--dark-bg-primary))",
         "dark-Secondary": "rgba(var(--dark-bg-secondary))",
         "btn-primary": "rgba(var(--btn-primary))",
+        "light-text": "rgba(var(--dark-text))",
       },
     },
   },

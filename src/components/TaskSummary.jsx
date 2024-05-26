@@ -10,10 +10,10 @@ const TaskSummary = ({ dt }) => {
     { title: "Projects Done", no: "12", chartColor: "#5051F9" },
   ];
   return (
-    <div className="flex h-48 w-full flex-col divide-y-[1px] rounded-lg bg-light-Primary p-3">
+    <div className="  dark:text-light-text flex h-48 w-full flex-col divide-y-[1px] rounded-lg  bg-light-Primary p-3 dark:bg-dark-Primary">
       <div className="my-3 flex justify-start gap-3">
-        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-300 text-center">
-          <CiStar />
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-300 text-center dark:bg-[#282932]">
+          <CiStar className="dark:text-light-text" />
         </div>
         <p>{SummaryData[dt].title}</p>
         <p className=" ml-auto">{SummaryData[dt].no}</p>
