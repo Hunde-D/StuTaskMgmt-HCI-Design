@@ -1,6 +1,6 @@
 import { CiCalendarDate } from "react-icons/ci";
 import { GrAppsRounded } from "react-icons/gr";
-// import { PiDotsThreeVertical, PiPhoneCallThin } from "react-icons/pi";
+import { PiDotsThreeVertical, PiPhoneCall } from "react-icons/pi";
 import img from "../assets/images/emoji.png";
 
 import {
@@ -15,7 +15,9 @@ const QuickAccess = () => {
     <div className=" flex h-full w-1/4 flex-auto flex-col divide-y-[1px]  border-slate-100 bg-light-Primary px-6 py-4 font-DMSans dark:bg-dark-Primary">
       <div className="">
         <div className="mb-3 flex justify-between">
-          <p className="text-[#232360]">Todays Schedule</p>
+          <p className=" font-bold text-[#232360] dark:text-light-Primary">
+            Todays Schedule
+          </p>
           <div className="flex gap-3 rounded-xl bg-light-Secondary p-1 px-1.5">
             <GrAppsRounded />
             <CiCalendarDate />
@@ -26,8 +28,10 @@ const QuickAccess = () => {
           <p>
             30 minute call with Client <span className="ml-20">+invite</span>
           </p>
-          <p className="text-[#232360]">Project Discovery Call</p>
-          <div className=" bg-btn-primary mb-5 flex w-4/5 self-center  rounded-lg px-2 py-4 text-light-Primary">
+          <p className="font-bold text-[#232360] dark:text-light-Primary">
+            Project Discovery Call
+          </p>
+          <div className=" mb-5 flex w-4/5 items-center justify-evenly  self-center rounded-lg bg-btn-primary px-2 py-4 text-light-Primary">
             <div className="flex -space-x-4 rtl:space-x-reverse">
               <img
                 className="h-9 w-9 rounded-full border-2 border-white dark:border-gray-800"
@@ -51,15 +55,17 @@ const QuickAccess = () => {
               />
             </div>
             <p>28:35</p>
-            <div>
-              {/* <PiPhoneCallThin /> */}
-              {/* <PiDotsThreeVertical class="text-white" /> */}
+            <div className="flex gap-2">
+              <PiPhoneCall size={25} />
+              <PiDotsThreeVertical size={25} class="text-white" />
             </div>
           </div>
         </div>
       </div>
       <div>
-        <p className="m-3">Messges</p>
+        <p className="m-3 font-bold text-[#232360] dark:text-light-Primary">
+          Messges
+        </p>
 
         <div className="my-3 flex items-center gap-4">
           <img className="h-10 w-10 rounded-full" src={avtRed} alt="" />
@@ -100,8 +106,10 @@ const QuickAccess = () => {
 
         {/* {} */}
         <div>
-          <p className="my-2 font-bold text-[#232360]">New Task</p>
-          <p className="text-sm font-thin text-[#768396]">Task Title</p>
+          <p className="my-2 font-bold text-[#232360] dark:text-light-Primary">
+            New Task
+          </p>
+          <p className="mb-2 text-sm font-thin text-[#768396]">Task Title</p>
           <div className="max-w-sm space-y-3">
             <input
               type="text"
