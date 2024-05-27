@@ -7,7 +7,6 @@ const taskInfo = [
     link: "www.example.org",
     comments: "8 comments",
     completed: 24,
-    color: "btn-primary",
   },
   {
     time: "10:45",
@@ -15,15 +14,13 @@ const taskInfo = [
     link: "www.example.org",
     comments: "5 comments",
     completed: 60,
-    color: "btn-primary",
   },
   {
     time: "7:15",
     title: "Search Inspiration for project",
     link: "www.example.org",
     comments: "7 comments",
-    completed: 90,
-    color: "btn-primary",
+    completed: 80,
   },
 ];
 

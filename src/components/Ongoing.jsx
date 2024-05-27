@@ -36,7 +36,7 @@ const Ongoing = ({ info }) => {
 
         <div className="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
           <div
-            className={`h-1.5 rounded-full bg-${info.color} w-[${info.completed}%]`}
+            className={`h-1.5 w-[${info.completed}%] rounded-full bg-btn-primary`}
             // style="width: 45%"
           ></div>
         </div>
