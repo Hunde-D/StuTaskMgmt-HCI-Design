@@ -35,10 +35,7 @@ const Ongoing = ({ info }) => {
         <p>{info.completed}% Completed</p>
 
         <div className="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-          <div
-            className={`h-1.5 w-[${info.completed}%] rounded-full bg-btn-primary`}
-            // style="width: 45%"
-          ></div>
+          <div className={`h-1.5 w-[24%] rounded-full bg-btn-primary`}></div>
         </div>
       </div>
       <div className=" flex flex-auto items-center justify-center py-3 ">
