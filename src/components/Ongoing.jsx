@@ -32,11 +32,11 @@ const Ongoing = ({ info }) => {
         </div>
       </div>
       <div className=" flex w-1/5 flex-auto flex-col gap-2  py-3">
-        <p>{info.completed}% Completed</p>
+        <p>{info.completed + 10}% Completed</p>
 
         <div className="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
           <div
-            className={`h-1.5 w-[${info.completed}%] rounded-full bg-btn-primary`}
+            className={`h-1.5 w-[${info.completed - 10}%] rounded-full bg-btn-primary`}
           ></div>
         </div>
       </div>
