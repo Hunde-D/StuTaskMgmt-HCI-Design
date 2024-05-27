@@ -3,7 +3,9 @@ import { BsChatDots } from "react-icons/bs";
 import { CiClock2 } from "react-icons/ci";
 import { IoIosLink } from "react-icons/io";
 import { GoStopwatch } from "react-icons/go";
+import { useState } from "react";
 const Ongoing = ({ info }) => {
+  const [completed, setCompleted] = useState(info.completed || 24);
   return (
     <div className="flex w-full gap-3 bg-light-Primary px-2  dark:bg-dark-Primary dark:text-light-Primary ">
       <div className="flex flex-auto items-center gap-3 bg-[#FBFAFF] p-3 dark:bg-[#212229]">
@@ -32,11 +34,11 @@ const Ongoing = ({ info }) => {
         </div>
       </div>
       <div className=" flex w-1/5 flex-auto flex-col gap-2  py-3">
-        <p>{info.completed + 10}% Completed</p>
+        <p>{info.completed}% Completed</p>
 
         <div className="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
           <div
-            className={`h-1.5 w-[${info.completed - 10}%] rounded-full bg-btn-primary`}
+            className={`h-1.5  w-[${completed}%] rounded-full bg-btn-primary`}
           ></div>
         </div>
       </div>
