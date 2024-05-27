@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 @layer components {
   .max-container {
     max-width: 1440px;
   }
   .active {
-    @apply border-sky-600 text-sky-600;
+    @apply border-sky-600 text-cyan-600;
   }
 }
 @font-face {
@@ -24,7 +26,7 @@
     --light-bg-light-white: 251, 250, 255;
     --dark-bg-primary: 30, 31, 37;
     --dark-bg-secondary: 19, 21, 23;
-    --btn-primary: 81, 80, 249;
     --dark-text: 225, 227, 231;
+    --btn-primary: 81, 80, 249;
   }
 }

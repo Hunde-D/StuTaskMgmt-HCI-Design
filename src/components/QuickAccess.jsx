@@ -1,8 +1,7 @@
 import { CiCalendarDate } from "react-icons/ci";
 import { GrAppsRounded } from "react-icons/gr";
 // import { PiDotsThreeVertical, PiPhoneCallThin } from "react-icons/pi";
-// import { Input } from "@material-tailwind/react";
-import img from "../assets/images/image.png";
+import img from "../assets/images/emoji.png";
 
 import {
   avtGray,
@@ -28,7 +27,7 @@ const QuickAccess = () => {
             30 minute call with Client <span className="ml-20">+invite</span>
           </p>
           <p className="text-[#232360]">Project Discovery Call</p>
-          <div className=" mb-5 flex w-4/5 self-center rounded-lg  bg-btn-primary px-2 py-4 text-light-Primary">
+          <div className=" bg-btn-primary mb-5 flex w-4/5 self-center  rounded-lg px-2 py-4 text-light-Primary">
             <div className="flex -space-x-4 rtl:space-x-reverse">
               <img
                 className="h-9 w-9 rounded-full border-2 border-white dark:border-gray-800"

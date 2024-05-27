@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import icon0 from "../assets/icons/icon0.svg";
 import icon1 from "../assets/icons/icon1.svg";
-import icon2 from "../assets/icons/icon2.svg";
-import icon3 from "../assets/icons/icon3.svg";
-import icon4 from "../assets/icons/icon4.svg";
+
 import { GrAppsRounded } from "react-icons/gr";
 import { IoIosSettings } from "react-icons/io";
 import { GoBook } from "react-icons/go";

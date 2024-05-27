@@ -1,6 +1,5 @@
 import { CiStar } from "react-icons/ci";
 import TaskChart from "./TaskChart";
-import { useState } from "react";
 
 const TaskSummary = ({ dt }) => {
   const SummaryData = [
