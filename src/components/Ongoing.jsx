@@ -14,7 +14,7 @@ const Ongoing = ({ info }) => {
         </div>
         <div>
           <p>Start from</p>
-          <p className="flex items-center justify-start gap-1 text-[13px] text-[#C6C6C6]">
+          <p className="flex items-center justify-start gap-1 text-[13px] text-[#778399] dark:text-[#C6C6C6]">
             <span>
               <CiClock2 />
             </span>
@@ -25,10 +25,10 @@ const Ongoing = ({ info }) => {
       <div className=" flex-auto py-3">
         <p>{info.title}</p>
         <div className=" flex gap-2 divide-x-[1px]">
-          <p className="flex items-center gap-1 text-[13px] text-[#C6C6C6]">
+          <p className="flex items-center gap-1 text-[13px] text-[#778399] dark:text-[#C6C6C6]">
             <IoIosLink /> <p className="text-btn-primary">{info.link}</p>
           </p>
-          <div className="flex items-center gap-2 px-2 text-[13px] text-[#C6C6C6]">
+          <div className="flex items-center gap-2 px-2 text-[13px] text-[#778399] dark:text-[#C6C6C6]">
             <BsChatDots /> <p>{info.comments}</p>
           </div>
         </div>
