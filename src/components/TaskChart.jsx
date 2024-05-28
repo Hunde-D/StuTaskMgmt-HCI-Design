@@ -92,7 +92,7 @@ const TaskChart = ({ lineColor }) => {
   };
 
   return (
-    <Card className="w-fit">
+    <Card className="my-1 h-28 bg-transparent">
       <CardBody className=" ">
         <Chart {...chartConfig} className="-ml-4 text-sm font-light" />
       </CardBody>
