@@ -96,6 +96,78 @@ const UserChatList = () => {
             </div>
           </div>
         </div>
+        <div className="my-3 flex items-center gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtRed} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Yosef Leos</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              Hi Hunde! How are You?
+            </div>
+          </div>
+        </div>
+        <div className="my-3 flex items-center gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtBlue} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Lealem </div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              Do you need that design?
+            </div>
+          </div>
+        </div>
+        <div className="my-3items-center flex gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtPurple} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Fira'ol</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              What is the price of hourly...
+            </div>
+          </div>
+        </div>
+        <div className="my-3 flex items-center gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtYellow} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Anwar Ahmed</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              Awsome design!!
+            </div>
+          </div>
+        </div>
+        <div className="my-3 flex items-center gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtRed} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Yosef Leos</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              Hi Hunde! How are You?
+            </div>
+          </div>
+        </div>
+        <div className="my-3 flex items-center gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtBlue} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Lealem </div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              Do you need that design?
+            </div>
+          </div>
+        </div>
+        <div className="my-3items-center flex gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtPurple} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Fira'ol</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              What is the price of hourly...
+            </div>
+          </div>
+        </div>
+        <div className="my-3 flex items-center gap-4">
+          <img className="h-10 w-10 rounded-full" src={avtYellow} alt="" />
+          <div className="font-medium dark:text-white">
+            <div>Anwar Ahmed</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              Awsome design!!
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

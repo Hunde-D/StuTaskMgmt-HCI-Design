@@ -13,7 +13,7 @@ const Header = () => {
   };
   return (
     <div className="  flex h-12 w-full flex-auto items-center justify-end border-b-[0.25px] border-[#e8e9ea]  bg-light-Primary px-5 dark:border-[#424141] dark:bg-dark-Primary">
-      <div className=" mr-96 flex h-4/6 rounded-md bg-gray-200 px-4 dark:bg-black">
+      <div className=" mr-[430px] flex h-4/6 rounded-md bg-gray-200 px-4 dark:bg-black">
         <input
           type="search"
           placeholder="Search Anything.."
