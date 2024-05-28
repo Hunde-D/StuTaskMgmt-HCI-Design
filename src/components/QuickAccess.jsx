@@ -113,7 +113,7 @@ const QuickAccess = () => {
           <div className="max-w-sm space-y-3">
             <input
               type="text"
-              className="block w-full rounded-2xl border-gray-200 bg-light-Secondary px-5 py-3 text-sm focus:border-blue-500 focus:ring-blue-500  dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+              className="block w-full rounded-2xl border-gray-200 bg-light-Secondary px-5 py-3 text-sm outline-btn-primary focus:border-blue-500 focus:ring-blue-500  dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
               placeholder="Create New"
             />
           </div>
