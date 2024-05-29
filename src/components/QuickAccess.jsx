@@ -1,7 +1,8 @@
 import { CiCalendarDate } from "react-icons/ci";
 import { GrAppsRounded } from "react-icons/gr";
 import { PiDotsThreeVertical, PiPhoneCall } from "react-icons/pi";
-import img from "../assets/images/emoji.png";
+import img from "../assets/images/emoji1.png";
+import { useState } from "react";
 
 import {
   avtGray,
@@ -10,7 +11,16 @@ import {
   avtYellow,
   avtRed,
 } from "../assets/avatar";
+import Picker from "emoji-picker-react";
+// import { set } from "firebase/database";
+
 const QuickAccess = () => {
+  const [isPickerOpen, setIsPickerOpen] = useState(false);
+  const [text, setText] = useState("");
+  const handleReaction = (e) => {
+    setText((prev) => prev + e.emoji);
+    // setOpenEmoji(false);
+  };
   return (
     <div className=" flex h-full w-1/4 flex-auto flex-col divide-y-[1px]  border-slate-100 bg-light-Primary px-6 py-4 font-DMSans dark:bg-dark-Primary">
       <div className="">
@@ -113,11 +123,22 @@ const QuickAccess = () => {
           <div className="max-w-sm space-y-3">
             <input
               type="text"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
               className="block w-full rounded-2xl border-gray-200 bg-light-Secondary px-5 py-3 text-sm outline-btn-primary focus:border-blue-500 focus:ring-blue-500  dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
               placeholder="Create New"
             />
           </div>
-          {/* <div className="text-lg"> 😎👌🔥😎🎉🥳✨🏆😍🍾🚀😎</div> */}
+          <div className="mt-20" style={{ position: "relative" }}>
+            <Picker
+              reactionsDefaultOpen={true}
+              onReactionClick={handleReaction}
+              height={330}
+              width={280}
+              style={{ position: "absolute", bottom: "0" }}
+            />
+          </div>
+
           <img className="  w-full rounded-full" src={img} />
         </div>
       </div>

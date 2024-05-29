@@ -6,7 +6,7 @@ const taskInfo = [
     title: "Search Inspiration for project",
     link: "www.example.org",
     comments: "8 comments",
-    completed: 24,
+    completed: 60,
   },
   {
     time: "10:45",
@@ -20,7 +20,7 @@ const taskInfo = [
     title: "Search Inspiration for project",
     link: "www.example.org",
     comments: "7 comments",
-    completed: 80,
+    completed: 60,
   },
 ];
 

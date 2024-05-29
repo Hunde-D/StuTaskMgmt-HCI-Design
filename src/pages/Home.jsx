@@ -3,7 +3,7 @@ import QuickAccess from "../components/QuickAccess";
 
 const Home = () => {
   return (
-    <div className="flex w-full flex-auto">
+    <div className="flex h-[700px] w-full flex-auto bg-light-Secondary dark:bg-dark-Secondary">
       <DashBoard />
       <QuickAccess />
     </div>

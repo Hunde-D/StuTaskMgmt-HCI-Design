@@ -7,7 +7,7 @@ import { useState } from "react";
 const Ongoing = ({ info }) => {
   const [completed, setCompleted] = useState(info.completed || 24);
   return (
-    <div className="flex w-full gap-3 bg-light-Primary px-2  dark:bg-dark-Primary dark:text-light-Primary ">
+    <div className="flex w-full gap-3 bg-light-Primary   dark:bg-dark-Primary dark:text-light-Primary ">
       <div className="flex flex-auto items-center gap-3 bg-[#FBFAFF] p-3 dark:bg-[#212229]">
         <div className=" flex h-8 w-8 items-center justify-center  rounded-full bg-btn-primary">
           <FaPlay className="text-white" size={15} />
